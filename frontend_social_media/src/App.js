@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage.js';
 import HomePage from './pages/HomePage.js';
+import ProfilePage from './pages/ProfilePage.js';
 
 function App() {
     const [user, setUser] = useState('hello');
@@ -23,6 +24,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path='/home' element={<HomePage />} />
+                        <Route path="/profile" element={<ProfilePage />} />
                     </Routes>
                 )}
 
